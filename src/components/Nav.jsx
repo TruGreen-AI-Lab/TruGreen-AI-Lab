@@ -17,7 +17,7 @@ export default function Nav() {
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-emerald-600">
             <path d="M12 2l2.5 4.7L20 8l-4 3.9.9 5.6L12 15.9 7.1 17.5 8 11.9 4 8l5.5-1.3L12 2z" stroke="currentColor" strokeWidth="1.3"/>
           </svg>
-          <span className="font-semibold">TruGeen AI Lab</span>
+          <span className="font-semibold">TruGreen AI Lab</span>
         </Link>
         <nav className="ml-auto flex gap-2 text-sm">
           {links.map(l => (
