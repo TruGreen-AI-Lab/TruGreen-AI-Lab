@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
 import { DATA } from '../data'
+import heroBg from '../assets/hero-bg.png'
 export default function Home() {
   return (
-    <section className="bg-gradient-to-b from-emerald-50 to-white">
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+      <div className="absolute inset-0 -z-0 bg-gradient-to-b from-white/70 via-white/80 to-white" />
       <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-gray-900">TruGreen AI Lab</h1>

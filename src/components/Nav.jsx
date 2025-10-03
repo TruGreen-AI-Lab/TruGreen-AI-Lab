@@ -11,7 +11,7 @@ export default function Nav() {
     { to: '/contact', label: 'Contact' },
   ]
   return (
-    <header className="sticky top-0 z-50 backdrop-blur bg-white/75 border-b">
+    <header className="sticky top-0 z-50 border-b border-emerald-100 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-4">
         <Link to="/" className="flex items-center gap-2">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-emerald-600">
