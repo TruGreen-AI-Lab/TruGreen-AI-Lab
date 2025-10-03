@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // If you deploy to a user/org site (username.github.io), set base: '/'.
 export default defineConfig({
   plugins: [react()],
-  base: '/trugeen-ai-lab/',
+  base: '/trugreen-ai-lab/',
 })
