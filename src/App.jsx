@@ -1,0 +1,32 @@
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/Nav.jsx'
+import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import People from './pages/People.jsx'
+import Research from './pages/Research.jsx'
+import News from './pages/News.jsx'
+import Publications from './pages/Publications.jsx'
+import Resources from './pages/Resources.jsx'
+import Contact from './pages/Contact.jsx'
+
+export default function App() {
+  return (
+    <div className="font-sans text-gray-900">
+      <Nav />
+      <main className="min-h-[60vh] bg-white">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/people" element={<People />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
+}
