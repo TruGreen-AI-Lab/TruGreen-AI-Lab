@@ -2,7 +2,7 @@ import SectionTitle from '../components/SectionTitle'
 import { DATA } from '../data'
 export default function About() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 space-y-8">
+    <section className="mx-auto max-w-7xl px-4 py-16 space-y-8 animate-fadeIn">
       <SectionTitle
         title="About"
         subtitle="We study methods that make AI systems reliable, efficient and sustainable, and translate them into impact with partners in science, health and the environment."

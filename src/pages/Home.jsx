@@ -5,7 +5,7 @@ import logo from '../assets/lab-logo.png'
 
 export default function Home() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden animate-fadeIn">
       {/*
         The full‑bleed background image establishes an immediate sense of
         identity for the lab.  A dark overlay ensures that the white
@@ -30,8 +30,15 @@ export default function Home() {
             alt="TrueGreen AI Lab logo"
             className="w-full max-w-md md:max-w-lg"
           />
-          <p className="text-2xl md:text-3xl leading-relaxed max-w-prose text-emerald-50">
-            {DATA.lab.tagline}
+          <p className="text-2xl md:text-3xl leading-relaxed max-w-prose">
+            <span className="block">
+              <span className="text-emerald-300 font-semibold">Trustworthy</span>,
+              <span className="text-emerald-400 font-semibold"> Green</span>,
+              <span className="text-emerald-500 font-semibold"> Efficient&nbsp;AI</span>
+            </span>
+            <span className="block mt-1">
+              for <span className="font-semibold text-emerald-300">Real‑World Impact</span>
+            </span>
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Link

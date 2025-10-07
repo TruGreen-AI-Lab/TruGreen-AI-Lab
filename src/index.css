@@ -43,3 +43,23 @@ body {
 .animate-spin-slow {
   animation: spin-slow 20s linear infinite;
 }
+
+/*
+  Fade in page content when navigating between routes.  Each page
+  component applies the `.animate-fadeIn` class to its root `<section>`
+  element to trigger this effect.  The slight vertical translation
+  creates a more natural entrance.
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease both;
+}

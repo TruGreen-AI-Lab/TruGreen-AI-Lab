@@ -2,7 +2,7 @@ import SectionTitle from '../components/SectionTitle'
 import { DATA } from '../data'
 export default function Publications() {
   return (
-    <section className="bg-gray-50/80 border-y">
+    <section className="bg-gray-50/80 border-y animate-fadeIn">
       <div className="mx-auto max-w-7xl px-4 py-16">
         <SectionTitle
           title="Publications"

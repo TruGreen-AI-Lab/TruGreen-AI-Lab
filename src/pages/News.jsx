@@ -2,7 +2,7 @@ import SectionTitle from '../components/SectionTitle'
 import { DATA } from '../data'
 export default function News() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16">
+    <section className="mx-auto max-w-7xl px-4 py-16 animate-fadeIn">
       <SectionTitle title="News" subtitle="Highlights and announcements." />
       <ul className="mt-8 space-y-5">
         {DATA.news.map((n, i) => (

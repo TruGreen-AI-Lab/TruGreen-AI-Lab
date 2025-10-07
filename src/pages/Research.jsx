@@ -2,7 +2,7 @@ import SectionTitle from '../components/SectionTitle'
 import { DATA } from '../data'
 export default function Research() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 space-y-8">
+    <section className="mx-auto max-w-7xl px-4 py-16 space-y-8 animate-fadeIn">
       <SectionTitle
         title="Research"
         subtitle="Core themes connecting methods, systems and applications."
