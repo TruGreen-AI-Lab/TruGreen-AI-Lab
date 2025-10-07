@@ -7,8 +7,7 @@ import People from './pages/People.jsx'
 import Research from './pages/Research.jsx'
 import News from './pages/News.jsx'
 import Publications from './pages/Publications.jsx'
-import Resources from './pages/Resources.jsx'
-import Contact from './pages/Contact.jsx'
+import Positions from './pages/Positions.jsx'
 
 export default function App() {
   return (
@@ -22,8 +21,7 @@ export default function App() {
           <Route path="/research" element={<Research />} />
           <Route path="/news" element={<News />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/positions" element={<Positions />} />
         </Routes>
       </main>
       <Footer />

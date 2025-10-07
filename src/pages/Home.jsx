@@ -29,11 +29,11 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              to="/contact"
+              to="/positions"
               className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white
                          font-medium shadow-md hover:bg-emerald-700 transition-colors"
             >
-              Get in touch
+              Join us
             </Link>
             <Link
               to="/research"

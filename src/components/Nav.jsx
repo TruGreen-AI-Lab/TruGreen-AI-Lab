@@ -7,8 +7,7 @@ export default function Nav() {
     { to: '/research', label: 'Research' },
     { to: '/news', label: 'News' },
     { to: '/publications', label: 'Publications' },
-    { to: '/resources', label: 'Resources' },
-    { to: '/contact', label: 'Contact' },
+    { to: '/positions', label: 'Positions' },
   ]
   return (
     <header
