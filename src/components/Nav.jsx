@@ -1,9 +1,10 @@
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/lab-logo.png'
 export default function Nav() {
+  // Omit the About link since its content now lives on the home page.  The
+  // navigation remains concise, pointing visitors to key sections like
+  // People, Research, News, Publications and Positions.
   const links = [
     { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
     { to: '/people', label: 'People' },
     { to: '/research', label: 'Research' },
     { to: '/news', label: 'News' },
@@ -23,13 +24,8 @@ export default function Nav() {
           available.
         */}
         <Link to="/" className="flex items-center gap-3">
-          {/* Animated logo image */}
-          <img
-            src={logo}
-            alt="TrueGreen AI Lab logo"
-            className="h-8 w-auto animate-spin-slow"
-          />
-          <span className="font-semibold text-lg tracking-tight text-gray-900">
+          {/* Use a simple typographic mark for the lab name instead of an image.  */}
+          <span className="font-semibold text-lg tracking-tight text-emerald-700">
             TruGreen AI Lab
           </span>
         </Link>
