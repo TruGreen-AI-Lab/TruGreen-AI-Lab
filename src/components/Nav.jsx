@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../assets/lab-logo.png'
 export default function Nav() {
   const links = [
     { to: '/', label: 'Home' },
@@ -21,20 +22,13 @@ export default function Nav() {
           markup with an inline image or another SVG if a bespoke mark is
           available.
         */}
-        <Link to="/" className="flex items-center gap-3 text-emerald-600">
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 2l2.5 4.7L20 8l-4 3.9.9 5.6L12 15.9 7.1 17.5 8 11.9 4 8l5.5-1.3L12 2z"
-              stroke="currentColor"
-              strokeWidth="1.3"
-            />
-          </svg>
+        <Link to="/" className="flex items-center gap-3">
+          {/* Animated logo image */}
+          <img
+            src={logo}
+            alt="TrueGreen AI Lab logo"
+            className="h-8 w-auto animate-spin-slow"
+          />
           <span className="font-semibold text-lg tracking-tight text-gray-900">
             TruGreen AI Lab
           </span>

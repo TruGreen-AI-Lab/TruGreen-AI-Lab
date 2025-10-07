@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { DATA } from '../data'
 import homeBg from '../assets/home-bg.png'
-import wordmark from '../assets/wordmark.png'
+import logo from '../assets/lab-logo.png'
 
 export default function Home() {
   return (
@@ -20,20 +20,20 @@ export default function Home() {
           backgroundPosition: 'center',
         }}
       />
-      {/* Dark overlay for contrast */}
-      <div className="absolute inset-0 -z-0 bg-emerald-950/40" />
+      {/* Dark overlay for contrast – slightly lighter to reveal more of the background */}
+      <div className="absolute inset-0 -z-0 bg-emerald-900/30" />
       <div className="mx-auto max-w-7xl px-4 py-24 md:py-32 text-white">
-        <div className="max-w-2xl space-y-6">
-          {/* Use the supplied wordmark instead of plain text for the lab name */}
+        <div className="max-w-3xl space-y-8">
+          {/* Use the supplied logo instead of plain text for the lab name */}
           <img
-            src={wordmark}
-            alt="TrueGreen AI Lab wordmark"
-            className="w-full max-w-xs md:max-w-md"
+            src={logo}
+            alt="TrueGreen AI Lab logo"
+            className="w-full max-w-md md:max-w-lg"
           />
-          <p className="text-xl md:text-2xl leading-relaxed max-w-prose text-emerald-100">
+          <p className="text-2xl md:text-3xl leading-relaxed max-w-prose text-emerald-50">
             {DATA.lab.tagline}
           </p>
-          <div className="flex flex-wrap gap-4 pt-2">
+          <div className="flex flex-wrap gap-4 pt-4">
             <Link
               to="/positions"
               className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white

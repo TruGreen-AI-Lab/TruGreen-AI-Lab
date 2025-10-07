@@ -26,3 +26,20 @@ body {
 /* Custom tweaks */
 ::selection { background: rgba(16,185,129,0.25); }
 .focus-ring:focus-visible { outline: 2px solid rgb(16 185 129); outline-offset: 2px; }
+
+/*
+  Custom animation for the lab logo.  A slow rotation draws subtle
+  attention to the brand without being distracting.  The utility class
+  `.animate-spin-slow` can be applied to any element to enable it.
+*/
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
