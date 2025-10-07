@@ -60,36 +60,38 @@ export default function Home() {
           </div>
         </div>
         {/*
-          Integrate the research areas directly into the homepage.  Visitors
-          scrolling down from the hero can immediately learn about the lab’s
-          focus without navigating to a separate About page.  The coloured
-          cards reuse the same palette from the former About page.
+          Provide only a teaser of our research on the homepage to avoid
+          duplicating the detailed descriptions found on the Research page.
+          Visitors see the core themes at a glance and can follow the link
+          below to learn more.
         */}
-        <div className="mt-24 space-y-8">
+        <div className="mt-24 space-y-6">
           <SectionTitle
-            title="Research Areas"
-            subtitle="We study methods that make AI systems reliable, efficient and sustainable, and translate them into impact with partners in science, health and the environment."
+            title="Research"
+            subtitle="Core themes connecting methods, systems and applications."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex flex-wrap gap-3">
             {DATA.researchAreas.map((a, i) => {
               const colours = ['bg-emerald-50', 'bg-teal-50', 'bg-lime-50', 'bg-green-50']
               const colour = colours[i % colours.length]
               return (
-                <div
+                <span
                   key={a.title}
-                  className={[
-                    colour,
-                    'rounded-3xl border border-emerald-100 p-6 shadow-sm',
-                    'hover:shadow-md transition-shadow duration-200 ease-in-out',
-                  ].join(' ')}
+                  className={[colour, 'px-4 py-2 rounded-full text-emerald-800 text-sm font-medium border border-emerald-100'].join(' ')}
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {a.title}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">{a.desc}</p>
-                </div>
+                  {a.title}
+                </span>
               )
             })}
+          </div>
+          <div className="pt-4">
+            <Link
+              to="/research"
+              className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white
+                         font-medium shadow-md hover:bg-emerald-700 transition-colors"
+            >
+              Explore our research
+            </Link>
           </div>
         </div>
       </div>
