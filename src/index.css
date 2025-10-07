@@ -1,7 +1,27 @@
+/*
+  Load a modern sans‑serif typeface from Google Fonts.  Using an external
+  font dramatically improves the look and feel of the site without
+  requiring any additional build tooling.  Inter is a clean, legible
+  typeface optimised for screens and pairs well with the minimal design.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Global base styles.  These reset the default font on the body to
+  Inter and establish a consistent text colour throughout the app.  If
+  Tailwind is unable to resolve the CSS variable for the accent colour
+  (used in the custom selection below) it will gracefully fall back to
+  emerald.  These rules sit outside of Tailwind’s purview so they’re
+  applied regardless of the loaded classes.
+*/
+body {
+  font-family: 'Inter', sans-serif;
+  color: theme('colors.gray.800', #1f2937);
+}
 
 /* Custom tweaks */
 ::selection { background: rgba(16,185,129,0.25); }
