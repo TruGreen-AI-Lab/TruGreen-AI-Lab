@@ -255,7 +255,7 @@ export const DATA = {
   ],
   publications: [
     { year: 2025, title: 'SPAM: Spike-Aware Adam with Momentum Reset for Stable LLM Training', authors: 'Tianjin Huang et al.', venue: 'ICML', link: 'https://arxiv.org/abs/2501.06842' },
-    { year: 2025, title: 'SBenchmarking Audio Deepfake Detection Robustness in real‑world communication scenarios', authors: 'Haohan Shi et al.', venue: 'EUSIPCO', link: 'https://eusipco2025.org/wp-content/uploads/pdfs/0000566.pdf' },
+    { year: 2025, title: 'Benchmarking Audio Deepfake Detection Robustness in real‑world communication scenarios', authors: 'Haohan Shi et al.', venue: 'EUSIPCO', link: 'https://eusipco2025.org/wp-content/uploads/pdfs/0000566.pdf' },
   ],
   resources: [
     { label: 'Open Positions', url: '#/contact' },
