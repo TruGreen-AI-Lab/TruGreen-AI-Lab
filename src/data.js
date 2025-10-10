@@ -114,7 +114,7 @@ export const DATA = {
     {
       date: '2024-07-01',
       title: 'BMVC 2024 paper accepted',
-      detail: 'Are Sparse Neural Networks Better Hard Sample Learners? accepted at BMVC 2024.',
+      detail: 'Are Sparse Neural Networks Better Hard Sample Learners? accsepted at BMVC 2024.',
       url: 'https://arxiv.org/abs/2409.09196',
       highlight: 'Sparse Neural Networks',
     },
