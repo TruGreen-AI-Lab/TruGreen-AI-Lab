@@ -24,6 +24,27 @@ const EnvelopeIcon = ({ className = '' }) => (
   </svg>
 )
 
+/*
+  A simple external link icon reused from the Publications page.  It depicts an
+  arrow leaving a box, signalling that the link will open in a new tab.  The
+  SVG is defined inline to avoid importing additional dependencies and to
+  maintain visual consistency across pages.
+*/
+const ExternalLinkIcon = ({ className = '' }) => (
+  <svg
+    className={`h-4 w-4 mr-1 ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path
+      fillRule="evenodd"
+      d="M12.97 2.47a.75.75 0 011.06 0l6.5 6.5a.75.75 0 010 1.06l-6.5 6.5a.75.75 0 11-1.06-1.06l4.72-4.72H4.5a.75.75 0 010-1.5h13.19l-4.72-4.72a.75.75 0 010-1.06z"
+      clipRule="evenodd"
+    />
+  </svg>
+)
+
 export default function People() {
   const allPIs = [DATA.lab.director, ...DATA.lab.pis]
   return (
@@ -68,6 +89,18 @@ export default function People() {
                 >
                   <EnvelopeIcon className="text-emerald-600" />
                   {p.email}
+                </a>
+              )}
+              {/* If a webpage URL is provided, render a second line with an external link icon. */}
+              {p.webpage && (
+                <a
+                  href={p.webpage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center text-sm text-emerald-700 hover:underline hover:text-emerald-800"
+                >
+                  <ExternalLinkIcon className="text-emerald-600" />
+                  Website
                 </a>
               )}
             </div>
