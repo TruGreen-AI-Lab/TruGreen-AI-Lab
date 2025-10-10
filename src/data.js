@@ -281,6 +281,9 @@ export const DATA = {
   publications: [
     { year: 2025, title: 'SPAM: Spike-Aware Adam with Momentum Reset for Stable LLM Training', authors: 'Tianjin Huang et al.', venue: 'ICML', link: 'https://arxiv.org/abs/2501.06842' },
     { year: 2025, title: 'Benchmarking Audio Deepfake Detection Robustness in real‑world communication scenarios', authors: 'Haohan Shi et al.', venue: 'EUSIPCO', link: 'https://eusipco2025.org/wp-content/uploads/pdfs/0000566.pdf' },
+    { year: 2025, title: 'S2O: Enhancing Adversarial Training With Second-Order Statistics of Weights', authors: 'Gaojie Jin et al.', venue: 'IEEE TPAMI', link: 'https://ieeexplore.ieee.org/document/11027475' },
+    { year: 2025, title: 'Invariant Correlation of Representation With Label', authors: 'Gaojie Jin et al.', venue: 'IEEE TIFS', link: 'https://ieeexplore.ieee.org/abstract/document/10969094' },
+    { year: 2025, title: 'Enhancing Robust Fairness via Confusional Spectral Regularization', authors: 'Gaojie Jin et al.', venue: 'ICLR', link: 'https://arxiv.org/pdf/2501.13273' },
   ],
   resources: [
     { label: 'Open Positions', url: '#/contact' },
