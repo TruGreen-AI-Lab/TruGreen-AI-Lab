@@ -1,6 +1,7 @@
 import tianjinHuangImg from './assets/tj.png';
 import yunxiaoZhangImg from './assets/yunxiao.jpeg'; 
 import gaojieJinImg from './assets/gj.png'; 
+import ronghuiMuImg from './assets/IMG_2.png'; 
 export const DATA = {
   lab: {
     name: 'TruGreen AI Lab',
@@ -22,7 +23,7 @@ export const DATA = {
     pis: [
       { name: 'Tianjin Huang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 't.huang2@exeter.ac.uk', img: tianjinHuangImg, webpage:'https://tianjinyellow.github.io/'},
       { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: gaojieJinImg, webpage:'https://alexkael.github.io/'},
-      { name: 'Ronghui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: 'https://placehold.co/240x240?text=Rongrui%20Mu' },
+      { name: 'Ronghui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: ronghuiMuImg, webpage:'https://mrh996.github.io/ronghui/' },
       { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: yunxiaoZhangImg, webpage:'https://experts.exeter.ac.uk/41641-yunxiao-zhang' },
     ],
     // members: [
@@ -112,11 +113,10 @@ export const DATA = {
   
   researchAreas: [
     { title: 'Trustworthy AI', desc: 'Robustness, safety, alignment and evaluation across modalities.' },
-    
     { title: 'Green & Efficient ML', desc: 'Energy-aware training, compression, and low-precision inference.' },
     { title: 'Sparse & Stable Optimization', desc: 'Optimizers and curricula that reduce compute and improve stability.' },
     { title: 'Applied AI', desc: 'Remote sensing, healthcare, and scientific discovery.' },
-    {tile: 'Reinforcement learning and its application', desc: 'Reinforcement learning algorithm development, applied to protein design and power system.'},
+    {tile: 'Reinforcement learning and its application', desc: 'Reinforcement learning algorithm development, RL application on protein design and power system.'},
   ],
   news: [
     // Newest first.  When only the month and year are known we default the day to the 1st.
