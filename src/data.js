@@ -124,6 +124,14 @@ export const DATA = {
       ],
     },
     {
+      date: '2025-09-01',
+      title: 'Got a grant from NVIDIA Academic Grant Program',
+    },
+    {
+      date: '2025-09-01',
+      title: 'Gaojie will be serving as an Area Chair for ICLR 2026',
+    },
+    {
       date: '2025-05-01',
       title: 'EUSIPCO 2025 audio deepfake benchmarking',
       detail: 'Benchmarking Audio Deepfake Detection Robustness in real‑world communication scenarios accepted at EUSIPCO 2025.',
