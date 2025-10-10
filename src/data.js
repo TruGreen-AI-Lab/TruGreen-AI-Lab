@@ -66,6 +66,14 @@ export const DATA = {
         img: 'https://placehold.co/240x240?text=Charlie%20Student',
         webpage: '',
       },
+      {
+        name: 'Zixia Wang',
+        role: 'PhD Student',
+        affiliation: 'University of Exeter',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Charlie%20Student',
+        webpage: '',
+      },
     ],
 
     /**
@@ -79,6 +87,14 @@ export const DATA = {
         name: 'Ziquan Zhu',
         role: 'Remote Visitor',
         affiliation: 'University of Leicester',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Dana%20Mentee',
+        webpage: '',
+      },
+      {
+        name: 'Shuaitong Liu',
+        role: 'Remote Visitor',
+        affiliation: 'Southwest University',
         email: '',
         img: 'https://placehold.co/240x240?text=Dana%20Mentee',
         webpage: '',
