@@ -1,5 +1,5 @@
 import tianjinHuangImg from './assets/tj.png';
-import yunxiaoZhangImg from './assets/yunxiao.png'; 
+import yunxiaoZhangImg from './assets/yunxiao.jpeg'; 
 export const DATA = {
   lab: {
     name: 'TruGreen AI Lab',
