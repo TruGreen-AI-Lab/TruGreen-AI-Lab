@@ -13,18 +13,18 @@ export default function Positions() {
         subtitle="Open roles and opportunities to join our team."
       />
       {positions.length > 0 ? (
-        <div className="mt-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {positions.map((r) => (
             <a
               key={r.label}
               href={r.url}
-              className="group flex items-center justify-between gap-4
-                         rounded-3xl bg-white/80 border border-emerald-100 px-5 py-4
-                         shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out"
+              className="group flex items-center justify-between gap-4 rounded-3xl border border-emerald-100 bg-gradient-to-r from-white/80 via-emerald-50/40 to-white/80 px-6 py-5 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out"
             >
-              <span className="font-medium text-gray-900">{r.label}</span>
+              <span className="font-medium text-gray-900 text-base group-hover:text-emerald-800">
+                {r.label}
+              </span>
               <svg
-                className="h-5 w-5 text-emerald-600 group-hover:translate-x-1 transition-transform"
+                className="h-6 w-6 text-emerald-600 group-hover:translate-x-1 transition-transform"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
@@ -39,7 +39,7 @@ export default function Positions() {
           ))}
         </div>
       ) : (
-        <p className="mt-8 text-gray-700">There are currently no open positions.</p>
+        <p className="mt-10 text-gray-700">There are currently no open positions.</p>
       )}
     </section>
   )
