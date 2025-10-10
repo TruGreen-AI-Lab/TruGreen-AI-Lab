@@ -58,6 +58,14 @@ export const DATA = {
         img: 'https://placehold.co/240x240?text=Charlie%20Student',
         webpage: '',
       },
+      {
+        name: 'Xinyu Li',
+        role: 'PhD Student',
+        affiliation: 'University of Exeter',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Charlie%20Student',
+        webpage: '',
+      },
     ],
 
     /**
