@@ -21,7 +21,7 @@ function ResearchBadge({ title, colour }) {
 
 export default function Research() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 space-y-10 animate-fadeIn">
+    <section className="mx-auto max-w-7xl px-4 pt-16 pb-12 space-y-10 animate-fadeIn">
       <SectionTitle
         title="Research"
         subtitle="Core themes connecting methods, systems and applications."

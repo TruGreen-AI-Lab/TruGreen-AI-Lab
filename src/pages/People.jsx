@@ -28,7 +28,7 @@ export default function People() {
   const allPIs = [DATA.lab.director, ...DATA.lab.pis]
   return (
     <section className="bg-gradient-to-b from-gray-50/80 to-white border-y animate-fadeIn">
-      <div className="mx-auto max-w-7xl px-4 py-16">
+      <div className="mx-auto max-w-7xl px-4 pt-16 pb-12">
         <SectionTitle
           title="People"
           subtitle="Principal investigators based at the University of Exeter."

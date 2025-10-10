@@ -7,7 +7,7 @@ import { DATA } from '../data'
 export default function Positions() {
   const positions = DATA.resources.filter((r) => /position/i.test(r.label))
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 animate-fadeIn">
+    <section className="mx-auto max-w-7xl px-4 pt-16 pb-12 animate-fadeIn">
       <SectionTitle
         title="Positions"
         subtitle="Open roles and opportunities to join our team."

@@ -2,7 +2,7 @@ import SectionTitle from '../components/SectionTitle'
 import { DATA } from '../data'
 export default function News() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 animate-fadeIn">
+    <section className="mx-auto max-w-7xl px-4 pt-16 pb-12 animate-fadeIn">
       <SectionTitle title="News" subtitle="Highlights and announcements." />
       {/*
         Render a vertical list of news items.  Each item uses a subtle
