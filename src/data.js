@@ -23,7 +23,59 @@ export const DATA = {
       { name: 'Rongrui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: 'https://placehold.co/240x240?text=Rongrui%20Mu' },
       { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: 'https://placehold.co/240x240?text=Yunxiao%20Zhang' },
     ],
+    // members: [
+    //   {
+    //     name: 'Alice Example',
+    //     role: 'Research Associate',
+    //     affiliation: 'University of Exeter',
+    //     email: '',
+    //     img: 'https://placehold.co/240x240?text=Alice%20Example',
+    //     webpage: '',
+    //   },
+    //   {
+    //     name: 'Bob Example',
+    //     role: 'Research Assistant',
+    //     affiliation: 'University of Exeter',
+    //     email: '',
+    //     img: 'https://placehold.co/240x240?text=Bob%20Example',
+    //     webpage: '',
+    //   },
+    // ],
+
+    /**
+     * A list of current PhD students supervised within the lab.  Each
+     * entry contains a name and short descriptor.  These can be
+     * expanded with additional fields (e.g. email, webpage) as needed.
+     */
+    phd: [
+      {
+        name: 'Tao Yong',
+        role: 'PhD Student',
+        affiliation: 'University of Exeter',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Charlie%20Student',
+        webpage: '',
+      },
+    ],
+
+    /**
+     * A list of undergraduate or Masters mentees who are working with
+     * the lab.  Keep this list up to date with mentees’ names and
+     * affiliations.  Similar to other person entries, optional
+     * properties like email and webpage may be added when available.
+     */
+    mentees: [
+      {
+        name: 'Ziquan Zhu',
+        role: 'Remote Visitor',
+        affiliation: 'University of Leicester',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Dana%20Mentee',
+        webpage: '',
+      },
+    ],
   },
+  
   researchAreas: [
     { title: 'Trustworthy AI', desc: 'Robustness, safety, alignment and evaluation across modalities.' },
     { title: 'Green & Efficient ML', desc: 'Energy-aware training, compression, and low-precision inference.' },

@@ -46,66 +46,110 @@ const ExternalLinkIcon = ({ className = '' }) => (
 )
 
 export default function People() {
-  const allPIs = [DATA.lab.director, ...DATA.lab.pis]
+  const {
+    director,
+    pis,
+    members,
+    phd = [],
+    mentees = [],
+  } = DATA.lab
+
+  // Helper to render a grid of person cards.  Reuses the same card markup
+  // for PIs, members, PhD students and mentees.  Accepts a list of
+  // person objects and an optional flag indicating whether the first
+  // entry should be marked as the director.
+  const renderCards = (list, markDirector = false) => (
+    <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {list.map((p, idx) => (
+        <div
+          key={p.name}
+          className="rounded-3xl bg-gradient-to-br from-white/70 via-emerald-50/40 to-white/70 border border-emerald-100 backdrop-blur-md p-6
+                     shadow-sm hover:shadow-lg transition-shadow duration-200 ease-in-out"
+        >
+          <div className="flex items-center gap-4">
+            <img
+              src={p.img}
+              alt={p.name}
+              className="h-16 w-16 rounded-2xl object-cover border-2 border-emerald-100 ring-1 ring-emerald-200"
+            />
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-gray-900 flex items-center flex-wrap">
+                {p.name}
+                {markDirector && idx === 0 && (
+                  <span
+                    className="ml-2 mt-1 inline-flex items-center text-xs font-medium text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-full px-2 py-0.5"
+                  >
+                    Director
+                  </span>
+                )}
+              </h3>
+              <p className="text-gray-600 text-sm">{p.role}</p>
+              <p className="text-gray-600 text-sm">{p.affiliation}</p>
+            </div>
+          </div>
+          {p.email && (
+            <a
+              href={`mailto:${p.email}`}
+              className="mt-4 inline-flex items-center text-sm text-emerald-700 hover:underline hover:text-emerald-800"
+            >
+              <EnvelopeIcon className="text-emerald-600" />
+              {p.email}
+            </a>
+          )}
+          {p.webpage && (
+            <a
+              href={p.webpage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center text-sm text-emerald-700 hover:underline hover:text-emerald-800"
+            >
+              <ExternalLinkIcon className="text-emerald-600" />
+              Website
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+
+  // Build arrays including the director at the front of the PI list
+  const piList = [director, ...pis]
+
   return (
     <section className="bg-gradient-to-b from-gray-50/80 to-white border-y animate-fadeIn">
       <div className="mx-auto max-w-7xl px-4 pt-16 pb-12">
         <SectionTitle
           title="People"
-          subtitle="Principal investigators based at the University of Exeter."
+          subtitle="Meet the team behind the TruGreen AI Lab."
         />
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {allPIs.map((p) => (
-            <div
-              key={p.name}
-              className="rounded-3xl bg-gradient-to-br from-white/70 via-emerald-50/40 to-white/70 border border-emerald-100 backdrop-blur-md p-6
-                         shadow-sm hover:shadow-lg transition-shadow duration-200 ease-in-out"
-            >
-              <div className="flex items-center gap-4">
-                <img
-                  src={p.img}
-                  alt={p.name}
-                  className="h-16 w-16 rounded-2xl object-cover border-2 border-emerald-100 ring-1 ring-emerald-200"
-                />
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 flex items-center flex-wrap">
-                    {p.name}
-                    {p.name === DATA.lab.director.name && (
-                      <span
-                        className="ml-2 mt-1 inline-flex items-center text-xs font-medium text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-full px-2 py-0.5"
-                      >
-                        Director
-                      </span>
-                    )}
-                  </h3>
-                  <p className="text-gray-600 text-sm">{p.role}</p>
-                  <p className="text-gray-600 text-sm">{p.affiliation}</p>
-                </div>
-              </div>
-              {p.email && (
-                <a
-                  href={`mailto:${p.email}`}
-                  className="mt-4 inline-flex items-center text-sm text-emerald-700 hover:underline hover:text-emerald-800"
-                >
-                  <EnvelopeIcon className="text-emerald-600" />
-                  {p.email}
-                </a>
-              )}
-              {/* If a webpage URL is provided, render a second line with an external link icon. */}
-              {p.webpage && (
-                <a
-                  href={p.webpage}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center text-sm text-emerald-700 hover:underline hover:text-emerald-800"
-                >
-                  <ExternalLinkIcon className="text-emerald-600" />
-                  Website
-                </a>
-              )}
-            </div>
-          ))}
-        </div>
+
+        {/* Principal investigators section */}
+        <h2 className="mt-10 text-xl font-semibold text-gray-900">Principal Investigators</h2>
+        {renderCards(piList, true)}
+
+        {/* Lab members section - only render if there are entries */}
+        {members && members.length > 0 && (
+          <>
+            <h2 className="mt-12 text-xl font-semibold text-gray-900">Lab Members</h2>
+            {renderCards(members)}
+          </>
+        )}
+
+        {/* PhD students section */}
+        {phd && phd.length > 0 && (
+          <>
+            <h2 className="mt-12 text-xl font-semibold text-gray-900">PhD Students</h2>
+            {renderCards(phd)}
+          </>
+        )}
+
+        {/* Mentees section */}
+        {mentees && mentees.length > 0 && (
+          <>
+            <h2 className="mt-12 text-xl font-semibold text-gray-900">Mentees</h2>
+            {renderCards(mentees)}
+          </>
+        )}
       </div>
     </section>
   )
