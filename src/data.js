@@ -120,8 +120,10 @@ export const DATA = {
   ],
   news: [
     // Newest first.  When only the month and year are known we default the day to the 1st.
-    {date: '2025-10-01',
-      text: 'Got Individual Research Grant from the Royal Society',}
+    {
+      date: '2025-10-01',
+      text: 'Got Individual Research Grant from the Royal Society',
+    },
     {
       date: '2025-09-01',
       title: 'NeurIPS 2025 paper accepted',
