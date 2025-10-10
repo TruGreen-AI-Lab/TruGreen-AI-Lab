@@ -110,15 +110,13 @@ export const DATA = {
     {
       date: '2025-01-01',
       title: 'ICLR 2025 papers accepted',
-      detail: 'Three papers accepted at ICLR 2025: Spike‑aware Optimizer (SPAM), Composable Interventions for Language Models, and Robust Fairness via Confusional Spectral Regularization.',
       detailSegments: [
-        { text: 'SPAM', url: 'https://arxiv.org/abs/2407.06483' },
+        {text:"Three papers accepted at ICLR 2025: Spike‑aware Optimizer (SPAM), Composable Interventions for Language Models, and Robust Fairness via Confusional Spectral Regularization."},
+        { text: 'SPAM', url: 'https://arxiv.org/abs/2501.06842' },
         { text: 'Composable Interventions', url: 'https://arxiv.org/abs/2407.06483' },
         { text: 'Robust Fairness', url: 'https://arxiv.org/abs/2501.13273' },
       ],
-      url: 'https://arxiv.org/abs/2407.06483',
-      highlight: 'Composable Interventions',
-      highlightUrl: 'https://arxiv.org/abs/2407.06483',
+      highlight: 'ICLR 2025',
     },
     {
       date: '2024-12-01',
