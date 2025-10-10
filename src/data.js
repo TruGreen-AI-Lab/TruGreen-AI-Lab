@@ -14,7 +14,7 @@ export const DATA = {
       name: 'Lu Liu',
       role: 'Lab Director & Principal Investigator',
       affiliation: 'University of Exeter',
-      email: 'l.liu@example.exeter.ac.uk',
+      email: 'l.liu3@exeter.ac.uk',
       img: 'https://placehold.co/240x240?text=Lu%20Liu',
       webpage: 'https://experts.exeter.ac.uk/42893-lu-liu',
     },
