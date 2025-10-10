@@ -99,17 +99,29 @@ export const DATA = {
         img: 'https://placehold.co/240x240?text=Dana%20Mentee',
         webpage: '',
       },
+      {
+        name: 'Sizhe liang',
+        role: 'Visitor',
+        affiliation: 'Shenzhen University',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Dana%20Mentee',
+        webpage: '',
+      },
     ],
   },
   
   researchAreas: [
     { title: 'Trustworthy AI', desc: 'Robustness, safety, alignment and evaluation across modalities.' },
+    
     { title: 'Green & Efficient ML', desc: 'Energy-aware training, compression, and low-precision inference.' },
     { title: 'Sparse & Stable Optimization', desc: 'Optimizers and curricula that reduce compute and improve stability.' },
     { title: 'Applied AI', desc: 'Remote sensing, healthcare, and scientific discovery.' },
+    {tile: 'Reinforcement learning and its application', desc: 'Reinforcement learning algorithm development, applied to protein design and power system.'},
   ],
   news: [
     // Newest first.  When only the month and year are known we default the day to the 1st.
+    {date: '2025-10-01',
+      text: 'Got Individual Research Grant from the Royal Society',}
     {
       date: '2025-09-01',
       title: 'NeurIPS 2025 paper accepted',
@@ -130,6 +142,13 @@ export const DATA = {
     {
       date: '2025-09-01',
       title: 'Gaojie will be serving as an Area Chair for ICLR 2026',
+    },
+            {
+      date: '2025-06-01',
+      title: 'IJCAI 2025 paper accepted',
+      detail: 'Safety of Embodied Navigation: A Survey',
+      highlight: 'IJCAI 2025',
+      highlightUrl: 'https://arxiv.org/abs/2508.05855',
     },
     {
       date: '2025-05-01',
