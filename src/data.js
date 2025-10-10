@@ -1,5 +1,6 @@
 import tianjinHuangImg from './assets/tj.png';
 import yunxiaoZhangImg from './assets/yunxiao.jpeg'; 
+import gaojieJinImg from './assets/gj.png'; 
 export const DATA = {
   lab: {
     name: 'TruGreen AI Lab',
@@ -20,7 +21,7 @@ export const DATA = {
     },
     pis: [
       { name: 'Tianjin Huang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 't.huang2@exeter.ac.uk', img: tianjinHuangImg, webpage:'https://tianjinyellow.github.io/'},
-      { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: 'https://placehold.co/240x240?text=Gaojie%20Jin', webpage:'https://alexkael.github.io/'},
+      { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: gaojieJinImg, webpage:'https://alexkael.github.io/'},
       { name: 'Rongrui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: 'https://placehold.co/240x240?text=Rongrui%20Mu' },
       { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: yunxiaoZhangImg, webpage:'https://experts.exeter.ac.uk/41641-yunxiao-zhang' },
     ],
