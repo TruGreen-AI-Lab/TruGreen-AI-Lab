@@ -36,11 +36,43 @@ export default function News() {
                 >
                   {n.date}
                 </span>
-                <span className="font-medium text-gray-900 text-base">
-                  {n.title}
-                </span>
+                {n.url ? (
+                  <a
+                    href={n.url}
+                    className="font-medium text-blue-600 hover:underline text-base"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {n.title}
+                  </a>
+                ) : (
+                  <span className="font-medium text-gray-900 text-base">
+                    {n.title}
+                  </span>
+                )}
               </div>
-              <p className="mt-2 text-gray-700 leading-relaxed">{n.detail}</p>
+              <p className="mt-2 text-gray-700 leading-relaxed">
+                {n.highlight ? (
+                  // split the detail by the highlight and interleave the highlighted text
+                  n.detail
+                    .split(n.highlight)
+                    .map((part, idx, arr) => {
+                      if (idx < arr.length - 1) {
+                        return (
+                          <span key={idx}>
+                            {part}
+                            <span className="text-red-600 font-semibold">
+                              {n.highlight}
+                            </span>
+                          </span>
+                        )
+                      }
+                      return part
+                    })
+                ) : (
+                  n.detail
+                )}
+              </p>
             </div>
           </li>
         ))}
