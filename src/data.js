@@ -116,7 +116,7 @@ export const DATA = {
     { title: 'Green & Efficient ML', desc: 'Energy-aware training, compression, and low-precision inference.' },
     { title: 'Sparse & Stable Optimization', desc: 'Optimizers and curricula that reduce compute and improve stability.' },
     { title: 'Applied AI', desc: 'Remote sensing, healthcare, and scientific discovery.' },
-    {tile: 'Reinforcement learning and its application', desc: 'Reinforcement learning algorithm development, RL application on protein design and power system.'},
+    { title: 'Reinforcement Learning', desc: 'Reinforcement learning algorithm development and its application in bio science (e.g. protein design) and power system.' },    
   ],
   news: [
     // Newest first.  When only the month and year are known we default the day to the 1st.
