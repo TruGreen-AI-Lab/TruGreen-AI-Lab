@@ -118,11 +118,12 @@ export const DATA = {
     { title: 'Applied AI', desc: 'Remote sensing, healthcare, and scientific discovery.' },
     { title: 'Reinforcement Learning', desc: 'Reinforcement learning algorithm development and its application in bio science (e.g. protein design) and power system.' },    
   ],
+  
   news: [
     // Newest first.  When only the month and year are known we default the day to the 1st.
     {
       date: '2025-10-01',
-      text: 'Got Individual Research Grant from the Royal Society',
+      title: 'Got Individual Research Grant from the Royal Society',
     },
     {
       date: '2025-09-01',
