@@ -5,3 +5,7 @@ dist
 npm-debug.log*
 pnpm-lock.yaml
 yarn.lock
+package.json
+package-lock.json
+
+package.json
