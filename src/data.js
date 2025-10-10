@@ -357,11 +357,11 @@ positions: [
   cscProposals: [
     {
       title: 'LLM for Digital Forensics',
-      file: '/CSC-Project-Digital-Forensics.pdf',
+      file: '/csc-project-digital-forensics.pdf',
     },
     {
       title: 'Shadow AI: risk and goverance',
-      file: '/CSC-Project-Shadow-AI.pdf',
+      file: '/csc-project-shadow-ai.pdf',
     },
   ],
 }

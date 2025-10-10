@@ -46,7 +46,7 @@ export default function CscPhd() {
           {proposals.map((p) => (
             <a
               key={p.title}
-              href={`/${p.file}`}
+              href={`${p.file}`}
               download
               className="flex items-center justify-between gap-4 rounded-3xl border border-emerald-100 bg-white/80 backdrop-blur-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out"
             >
