@@ -347,4 +347,21 @@ positions: [
     url: 'https://wellcome.org/grant-funding/schemes/early-career-awards',
   },
 ],
+  /**
+   * A list of sample project proposals for the CSC PhD scholarship.  Each
+   * proposal contains a human‑readable title and the filename of the PDF
+   * stored in the public folder.  Replace or extend this list with your
+   * actual proposals and file names.  The CscPhd page will iterate over
+   * this array to render a download button for each project.
+   */
+  cscProposals: [
+    {
+      title: 'LLM for Digital Forensics',
+      file: 'CSC-Project-Digital Forensics.pdf',
+    },
+    {
+      title: 'Shadow AI: risk and goverance',
+      file: 'CSC-Project-Shadow AI.pdf',
+    },
+  ],
 }

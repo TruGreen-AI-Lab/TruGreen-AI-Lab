@@ -4,12 +4,17 @@ export default function Nav() {
   // navigation remains concise, pointing visitors to key sections like
   // People, Research, News, Publications and Positions.
   const links = [
+    { to: '/csc-phd', label: '🔥2025-26 CSC 博士奖学金招生中' },
     { to: '/', label: 'Home' },
     { to: '/people', label: 'People' },
     { to: '/research', label: 'Research' },
     { to: '/news', label: 'News' },
     { to: '/publications', label: 'Publications' },
     { to: '/positions', label: 'Positions' },
+    // Expose the CSC PhD scholarship page in the navigation.  Keep the
+    // label short to preserve horizontal space; the full bilingual title
+    // appears on the page itself.
+    
   ]
   return (
     <header

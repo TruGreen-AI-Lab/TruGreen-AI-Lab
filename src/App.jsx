@@ -7,6 +7,7 @@ import Research from './pages/Research.jsx'
 import News from './pages/News.jsx'
 import Publications from './pages/Publications.jsx'
 import Positions from './pages/Positions.jsx'
+import CscPhd from './pages/CscPhd.jsx'
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
       <Nav />
       <main className="min-h-[60vh] bg-white">
         <Routes>
+          {/* A dedicated page for prospective CSC PhD students. */}
+          <Route path="/csc-phd" element={<CscPhd />} />
           <Route path="/" element={<Home />} />
           <Route path="/people" element={<People />} />
           <Route path="/research" element={<Research />} />
