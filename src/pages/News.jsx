@@ -52,26 +52,58 @@ export default function News() {
                 )}
               </div>
               <p className="mt-2 text-gray-700 leading-relaxed">
-                {n.highlight ? (
-                  // split the detail by the highlight and interleave the highlighted text
-                  n.detail
-                    .split(n.highlight)
-                    .map((part, idx, arr) => {
-                      if (idx < arr.length - 1) {
-                        return (
-                          <span key={idx}>
-                            {part}
-                            <span className="text-red-600 font-semibold">
-                              {n.highlight}
+                {Array.isArray(n.detailSegments)
+                  ? // When detailSegments is defined, render each segment.  Segments can have an
+                    // optional URL; if present the text becomes a clickable red link.  Plain
+                    // segments are rendered as normal text.
+                    n.detailSegments.map((seg, idx) =>
+                      seg.url ? (
+                        <a
+                          key={idx}
+                          href={seg.url}
+                          className="text-red-600 font-semibold underline hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {seg.text}
+                        </a>
+                      ) : (
+                        <span key={idx}>{seg.text}</span>
+                      ),
+                    )
+                  : n.highlight
+                  ? // If no detailSegments but a single highlight is defined, split the detail
+                    // string by the highlight and wrap the highlight accordingly.  This
+                    // maintains backward compatibility with older entries that only
+                    // specify one highlight.
+                    n.detail
+                      .split(n.highlight)
+                      .map((part, idx, arr) => {
+                        if (idx < arr.length - 1) {
+                          return (
+                            <span key={idx}>
+                              {part}
+                              {n.highlightUrl ? (
+                                <a
+                                  href={n.highlightUrl}
+                                  className="text-red-600 font-semibold underline hover:underline"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  {n.highlight}
+                                </a>
+                              ) : (
+                                <span className="text-red-600 font-semibold">
+                                  {n.highlight}
+                                </span>
+                              )}
                             </span>
-                          </span>
-                        )
-                      }
-                      return part
-                    })
-                ) : (
-                  n.detail
-                )}
+                          )
+                        }
+                        return part
+                      })
+                  : // Otherwise just render the detail as plain text.
+                    n.detail}
               </p>
             </div>
           </li>

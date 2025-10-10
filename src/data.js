@@ -44,9 +44,20 @@ export const DATA = {
     {
       date: '2025-09-01',
       title: 'NeurIPS 2025 paper accepted',
-      detail: 'One paper accepted at NeurIPS 2025: REOBench.',
+      // Provide segments so that multiple portions of the detail can be linked individually.  The
+      // segments array will override the `highlight` and `highlightUrl` fields below when
+      // rendering.  Each segment has a `text` field and an optional `url`.  When `url` is
+      // provided the text becomes a red, underlined link.
+      detailSegments: [
+        { text: 'One paper accepted at NeurIPS 2025: ' },
+        { text: 'REOBench', url: 'https://arxiv.org/abs/2505.16793' },
+        { text: '.' },
+      ],
       url: 'https://arxiv.org/abs/2505.16793',
       highlight: 'REOBench',
+      // When highlightUrl is present, the highlighted text in the detail will be wrapped in a link.  This is
+      // ignored when detailSegments is defined, but kept for backwards compatibility.
+      highlightUrl: 'https://arxiv.org/abs/2505.16793',
     },
     {
       date: '2025-05-01',
@@ -54,6 +65,7 @@ export const DATA = {
       detail: 'Benchmarking Audio Deepfake Detection Robustness in real‑world communication scenarios accepted at EUSIPCO 2025.',
       url: 'https://arxiv.org/abs/2504.12423',
       highlight: 'Audio Deepfake Detection',
+      highlightUrl: 'https://arxiv.org/abs/2504.12423',
     },
     {
       date: '2025-05-01',
@@ -61,6 +73,7 @@ export const DATA = {
       detail: 'We release REOBench: a benchmark for evaluating the robustness of Earth observation foundation models.',
       url: 'https://github.com/lx709/reobench',
       highlight: 'REOBench',
+      highlightUrl: 'https://github.com/lx709/reobench',
     },
     {
       date: '2025-05-01',
@@ -68,6 +81,7 @@ export const DATA = {
       detail: 'One paper (LKA) early accepted at MICCAI 2025.',
       url: 'https://arxiv.org/abs/2506.19118',
       highlight: 'LKA',
+      highlightUrl: 'https://arxiv.org/abs/2506.19118',
     },
     {
       date: '2025-05-01',
@@ -75,6 +89,7 @@ export const DATA = {
       detail: 'One paper (LIFT) accepted at ICML 2025.',
       url: 'https://arxiv.org/abs/2506.00772',
       highlight: 'LIFT',
+      highlightUrl: 'https://arxiv.org/abs/2506.00772',
     },
     {
       date: '2025-03-01',
@@ -82,6 +97,7 @@ export const DATA = {
       detail: 'A paper on traffic congestion prediction accepted by Expert Systems with Applications.',
       url: 'https://doi.org/10.1016/j.eswa.2025.127200',
       highlight: 'traffic congestion prediction',
+      highlightUrl: 'https://doi.org/10.1016/j.eswa.2025.127200',
     },
     {
       date: '2025-03-01',
@@ -89,13 +105,20 @@ export const DATA = {
       detail: 'Two papers accepted at the ICLR 2025 SCOPE workshop: Spike‑aware Optimizer (SPAM) and StableSPAM.',
       url: 'https://arxiv.org/abs/2501.06842',
       highlight: 'SPAM',
+      highlightUrl: 'https://arxiv.org/abs/2501.06842',
     },
     {
       date: '2025-01-01',
       title: 'ICLR 2025 papers accepted',
       detail: 'Three papers accepted at ICLR 2025: Spike‑aware Optimizer (SPAM), Composable Interventions for Language Models, and Robust Fairness via Confusional Spectral Regularization.',
+      detailSegments: [
+        { text: 'SPAM', url: 'https://arxiv.org/abs/2407.06483' },
+        { text: 'Composable Interventions', url: 'https://arxiv.org/abs/2407.06483' },
+        { text: 'Robust Fairness', url: 'https://arxiv.org/abs/2501.13273' },
+      ],
       url: 'https://arxiv.org/abs/2407.06483',
       highlight: 'Composable Interventions',
+      highlightUrl: 'https://arxiv.org/abs/2407.06483',
     },
     {
       date: '2024-12-01',
@@ -103,6 +126,7 @@ export const DATA = {
       detail: 'Invited talk delivered at the SGAI conference in Cambridge on benchmarking the robustness of remote sensing foundation models.',
       url: 'https://www.bcs.org/events-calendar/2025/april/webinar-sgai-virtual-seminar-series-2025-computer-vision-applications/',
       highlight: 'benchmarking the robustness',
+      highlightUrl: 'https://www.bcs.org/events-calendar/2025/april/webinar-sgai-virtual-seminar-series-2025-computer-vision-applications/',
     },
     {
       date: '2024-12-01',
@@ -110,13 +134,15 @@ export const DATA = {
       detail: 'Visual prompting upgrades neural network sparsification: a data‑model perspective accepted at AAAI 2025.',
       url: 'https://arxiv.org/abs/2312.01397',
       highlight: 'Visual prompting',
+      highlightUrl: 'https://arxiv.org/abs/2312.01397',
     },
     {
       date: '2024-07-01',
       title: 'BMVC 2024 paper accepted',
-      detail: 'Are Sparse Neural Networks Better Hard Sample Learners? accsepted at BMVC 2024.',
+      detail: 'Are Sparse Neural Networks Better Hard Sample Learners? accepted at BMVC 2024.',
       url: 'https://arxiv.org/abs/2409.09196',
       highlight: 'Sparse Neural Networks',
+      highlightUrl: 'https://arxiv.org/abs/2409.09196',
     },
     {
       date: '2024-06-01',
@@ -124,6 +150,7 @@ export const DATA = {
       detail: 'Co‑organizing the NeurIPS 2024 Edge‑Device Large Language Model Competition. Join us for the competition!',
       url: 'https://edge-llms-challenge.github.io/',
       highlight: 'Edge‑Device Large Language Model Competition',
+      highlightUrl: 'https://edge-llms-challenge.github.io/',
     },
     {
       date: '2024-03-01',
@@ -131,6 +158,7 @@ export const DATA = {
       detail: 'Composing Knowledge and Compression Interventions for Language Models accepted at an ICLR 2024 workshop.',
       url: 'https://openreview.net/forum?id=quK3DN5kUO',
       highlight: 'Composing Knowledge and Compression',
+      highlightUrl: 'https://openreview.net/forum?id=quK3DN5kUO',
     },
     {
       date: '2023-10-01',
@@ -138,6 +166,7 @@ export const DATA = {
       detail: 'Robust Spatiotemporal GCN accepted in Information Fusion.',
       url: 'https://doi.org/10.1016/j.inffus.2023.102078',
       highlight: 'Robust Spatiotemporal GCN',
+      highlightUrl: 'https://doi.org/10.1016/j.inffus.2023.102078',
     },
     {
       date: '2023-09-01',
@@ -145,6 +174,7 @@ export const DATA = {
       detail: 'Heterophily‑Based Graph Neural Network for Imbalanced Classification accepted in Complex Networks 2024.',
       url: 'https://arxiv.org/abs/2310.08725',
       highlight: 'Heterophily‑Based Graph Neural Network',
+      highlightUrl: 'https://arxiv.org/abs/2310.08725',
     },
     {
       date: '2023-09-01',
@@ -152,6 +182,7 @@ export const DATA = {
       detail: 'Channel‑DST accepted at NeurIPS 2023.',
       url: 'https://arxiv.org/abs/2305.19454',
       highlight: 'Channel‑DST',
+      highlightUrl: 'https://arxiv.org/abs/2305.19454',
     },
     {
       date: '2023-06-01',
@@ -159,6 +190,7 @@ export const DATA = {
       detail: 'Enhancing AT via Refining Optimization Trajectories accepted at ECML 2023.',
       url: 'https://arxiv.org/abs/2306.14275',
       highlight: 'Refining Optimization Trajectories',
+      highlightUrl: 'https://arxiv.org/abs/2306.14275',
     },
     {
       date: '2023-04-01',
@@ -166,6 +198,7 @@ export const DATA = {
       detail: 'Larger Kernel Serve better Teachers than Transformers accepted at ICML 2023.',
       url: 'https://arxiv.org/abs/2305.19412',
       highlight: 'Larger Kernel',
+      highlightUrl: 'https://arxiv.org/abs/2305.19412',
     },
     {
       date: '2023-01-01',
@@ -173,6 +206,7 @@ export const DATA = {
       detail: 'Oral paper “Sparsity May Cry: SMC” accepted at ICLR 2023.',
       url: 'https://arxiv.org/abs/2303.02141',
       highlight: 'Sparsity May Cry',
+      highlightUrl: 'https://arxiv.org/abs/2303.02141',
     },
     {
       date: '2022-11-01',
@@ -180,6 +214,7 @@ export const DATA = {
       detail: 'Better GNN by Finding Graph Tickets accepted at LoG 2022 with a Best Paper Award.',
       url: 'https://arxiv.org/abs/2211.15335',
       highlight: 'Finding Graph Tickets',
+      highlightUrl: 'https://arxiv.org/abs/2211.15335',
     },
     {
       date: '2022-11-01',
@@ -187,6 +222,7 @@ export const DATA = {
       detail: 'Lottery Pools accepted at AAAI 2023.',
       url: 'https://arxiv.org/abs/2208.10842',
       highlight: 'Lottery Pools',
+      highlightUrl: 'https://arxiv.org/abs/2208.10842',
     },
     {
       date: '2022-06-01',
@@ -194,6 +230,7 @@ export const DATA = {
       detail: 'Hop‑count based self‑supervised anomaly detection accepted at ECML‑PKDD 2022.',
       url: 'https://arxiv.org/abs/2104.07917',
       highlight: 'Hop‑count',
+      highlightUrl: 'https://arxiv.org/abs/2104.07917',
     },
   ],
   publications: [
