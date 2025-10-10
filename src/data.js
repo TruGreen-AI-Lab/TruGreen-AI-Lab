@@ -201,11 +201,97 @@ export const DATA = {
     },
   ],
   publications: [
-    { year: 2025, title: 'Stable Sparse Training for LLMs', authors: 'Liu*, Huang*, Jin, Mu, Zhang', venue: 'Preprint', link: '#' },
+    { year: 2025, title: 'SPAM: Spike-Aware Adam with Momentum Reset for Stable LLM Training', authors: 'Tianjin Huang et al.', venue: 'ICML', link: 'https://arxiv.org/abs/2501.06842' },
   ],
   resources: [
     { label: 'Open Positions', url: '#/contact' },
     { label: 'Code & Datasets', url: 'https://github.com/' },
     { label: 'Seminar Series', url: '#/news' },
   ],
+positions: [
+  {
+    title: 'CSC & University of Exeter PhD Scholarships',
+    detail:
+      'Up to 50 fully funded PhD scholarships for Chinese applicants to study at the University of Exeter as part of the China Scholarship Council collaboration',
+    url: 'https://www.exeter.ac.uk/study/pg-research/csc-scholarships/',
+  },
+  {
+    title: 'EPSRC Funded PhD Studentships',
+    detail:
+      'Up to 15 fully funded doctoral studentships available through the EPSRC Doctoral Landscape Award at Exeter for September 2025 entry',
+    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/epsrc-dla-studentships/',
+  },
+  {
+    title: 'UKRI CDT in Environmental Intelligence',
+    detail:
+      'Centre for Doctoral Training in Environmental Intelligence offering interdisciplinary training at the intersection of data science, AI and environmental challenges',
+    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundedcentres/eicdt/',
+  },
+  {
+    title: 'ESE Faculty PhD Studentships',
+    detail:
+      'Studentships in the Faculty of Environment, Science and Economy supporting research aligned with Exeter’s scientific priorities',
+    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundingbyfaculty/ese/',
+  },
+  {
+    title: 'Doctoral Training Partnerships & Centres',
+    detail:
+      'Various UK research council funded doctoral training partnerships and centres available through Exeter, spanning arts, biology, social sciences and engineering',
+    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundedcentres/',
+  },
+  {
+    title: 'Commonwealth & International Scholarships',
+    detail:
+      'Commonwealth Scholarship Plan provides full scholarships for talented students from eligible countries to pursue PhD study in other Commonwealth nations, including Exeter',
+    url: 'https://cscuk.dfid.gov.uk',
+  },
+  {
+    title: 'EPSRC Postdoctoral Fellowship',
+    detail:
+      'Fellowships funded by the UK Engineering and Physical Sciences Research Council offering support and flexibility for early or established researchers to develop world‑leading STEM research ideas',
+    url: 'https://www.ukri.org/opportunity/epsrc-fellowships-early-and-established-career/',
+  },
+  {
+    title: 'RAEng Research Fellowship',
+    detail:
+      'Five‑year fellowships aimed at early‑career researchers within four years of their PhD to undertake ambitious engineering projects at a UK host institution; fellows must start between August and October 2026',
+    url: 'https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-fellowships/eligibility/',
+  },
+  {
+    title: 'Royal Society University Research Fellowship',
+    detail:
+      'Eight‑year fellowships for outstanding early career scientists to build an independent research career in the UK or Republic of Ireland, with up to £1.87 million in funding',
+    url: 'https://royalsociety.org/grants/university-research/',
+  },
+  {
+    title: 'Newton International Fellowship',
+    detail:
+      'Two‑year fellowships jointly run by the Royal Society and British Academy to attract non‑UK early career researchers, providing up to £280k and fostering international collaboration',
+    url: 'https://royalsociety.org/grants/newton-international/',
+  },
+  {
+    title: 'Leverhulme Early Career Fellowship',
+    detail:
+      'Three‑year fellowships enabling early career researchers without a permanent post to undertake a significant project; the Trust funds 100% of salary in year 1 and 50% in years 2–3, plus research expenses',
+    url: 'https://www.leverhulme.ac.uk/early-career-fellowships',
+  },
+  {
+    title: 'Marie Skłodowska‑Curie Postdoctoral Fellowship',
+    detail:
+      'European fellowships lasting 12–30 months open to researchers of any nationality with up to eight years of post‑PhD experience, requiring mobility to a host country and offering salary, mobility and family allowances',
+    url: 'https://marie-sklodowska-curie-actions.ec.europa.eu',
+  },
+  {
+    title: '1851 Research Fellowship',
+    detail:
+      'Highly competitive three‑year fellowships awarded by the Royal Commission for the Exhibition of 1851 to outstanding early career scientists and engineers to pursue independent research projects',
+    url: 'https://royalcommission1851.org',
+  },
+  {
+    title: 'Wellcome Early‑Career Award',
+    detail:
+      'Wellcome Trust scheme supporting early‑career researchers from any discipline to develop their own research identity in areas of human life, health and wellbeing and prepare to lead an independent programme',
+    url: 'https://wellcome.org/grant-funding/schemes/early-career-awards',
+  },
+],
 }

@@ -5,7 +5,10 @@ import { DATA } from '../data'
 // filter for items that mention "position" in their label.  If no
 // positions are available the visitor is informed accordingly.
 export default function Positions() {
-  const positions = DATA.resources.filter((r) => /position/i.test(r.label))
+  // Pull the curated list of positions from the data file.  Each position
+  // includes a title, a short description and a URL.  If the list is
+  // empty a helpful message is displayed.
+  const positions = DATA.positions ?? []
   return (
     <section className="mx-auto max-w-7xl px-4 pt-16 pb-12 animate-fadeIn">
       <SectionTitle
@@ -14,17 +17,24 @@ export default function Positions() {
       />
       {positions.length > 0 ? (
         <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {positions.map((r) => (
+          {positions.map((p) => (
             <a
-              key={r.label}
-              href={r.url}
-              className="group flex items-center justify-between gap-4 rounded-3xl border border-emerald-100 bg-gradient-to-r from-white/80 via-emerald-50/40 to-white/80 px-6 py-5 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out"
+              key={p.title}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col justify-between rounded-3xl border border-emerald-100 bg-gradient-to-r from-white/80 via-emerald-50/40 to-white/80 px-6 py-5 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out"
             >
-              <span className="font-medium text-gray-900 text-base group-hover:text-emerald-800">
-                {r.label}
-              </span>
+              <div>
+                <span className="font-medium text-gray-900 text-base group-hover:text-emerald-800">
+                  {p.title}
+                </span>
+                <p className="mt-2 text-sm text-gray-700 leading-snug">
+                  {p.detail}
+                </p>
+              </div>
               <svg
-                className="h-6 w-6 text-emerald-600 group-hover:translate-x-1 transition-transform"
+                className="h-6 w-6 mt-4 self-end text-emerald-600 group-hover:translate-x-1 transition-transform"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
