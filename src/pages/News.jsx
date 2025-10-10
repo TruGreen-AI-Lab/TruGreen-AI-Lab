@@ -14,7 +14,12 @@ export default function News() {
         {DATA.news.map((n, i) => (
           <li
             key={i}
-            className="relative flex gap-4 rounded-3xl border border-emerald-100 bg-gradient-to-r from-white/80 via-emerald-50/40 to-white/80 p-5 shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out"
+            // The list item no longer uses a card-like background.  We keep
+            // the relative positioning for the timeline marker and a simple
+            // horizontal gap between the marker and the content.  All
+            // decorations (border, shadow, gradient) have been removed to
+            // create a cleaner timeline appearance.
+            className="relative flex gap-4"
           >
             {/* timeline marker */}
             <div className="flex flex-col items-center">
