@@ -449,10 +449,10 @@ positions: [
       title: 'Efficient Training and Fine-Tuning Strategies for Multi-Modal Foundation Models',
     },
     {
-      title: 'Responsible Agentic AI: Oversight, Safety, and Evaluation'
+      title: 'Responsible Agentic AI: Oversight, Safety, and Evaluation',
     },
     {
-      title: 'Towards Responsible Medical AI: Multi-Modal Learning, Safety, and Clinical Validation'
+      title: 'Towards Responsible Medical AI: Multi-Modal Learning, Safety, and Clinical Validation',
     }
   ],
 }
