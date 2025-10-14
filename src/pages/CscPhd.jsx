@@ -49,11 +49,12 @@ export default function CscPhd() {
               key={p.title}
               href={`${p.file}`}
               download
-              className="flex items-center justify-between gap-4 rounded-3xl border border-emerald-100 bg-white/80 backdrop-blur-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out"
+              className="flex flex-col items-start gap-2 rounded-3xl border border-emerald-100 bg-white/80 backdrop-blur-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out"
             >
               <span className="text-emerald-800 font-medium text-base">
                 {p.title}
               </span>
+              
               {Array.isArray(p.supervisors) && p.supervisors.length > 0 && (
                 <div className="text-sm text-gray-600 flex flex-wrap gap-x-1">
                   <span className="font-medium text-gray-700">Supervisors:</span>
