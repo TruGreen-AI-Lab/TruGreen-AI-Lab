@@ -39,7 +39,7 @@ export default function CscPhd() {
         我们欢迎来自计算机科学、人工智能、数据科学和网络安全等各个领域的申请者。<br /><br />
         申请者可以通过两种方式申请：提交您自己的研究计划，或选择以下已提供的研究项目之一。<br /><br />
         <strong>自行制定研究计划：</strong> 我们强烈鼓励并欢迎您提交自己的研究计划（详见“CSC-Exeter offical website 如何申请”部分）。<br />
-        <strong>查看现有项目列表：</strong> 详见以下项目列表。
+        <strong>查看现有项目列表：</strong> 详见以下项目列表。<br /><br />
         有意向的同学请联系项目指导老师。
       </p>
       {proposals.length > 0 && (
@@ -55,9 +55,10 @@ export default function CscPhd() {
                 {p.title}
               </span>
               {Array.isArray(p.supervisors) && p.supervisors.length > 0 && (
-                <span className="block text-sm text-gray-600">
-                  Supervisors: {p.supervisors.join(', ')}
-                </span>
+                <div className="text-sm text-gray-600 flex flex-wrap gap-x-1">
+                  <span className="font-medium text-gray-700">Supervisors:</span>
+                  <span>{p.supervisors.join(', ')}</span>
+                </div>
               )}
               <svg
                 className="h-6 w-6 text-emerald-600 group-hover:translate-x-1 transition-transform"
