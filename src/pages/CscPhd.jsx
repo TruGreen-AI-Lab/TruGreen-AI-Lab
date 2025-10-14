@@ -40,6 +40,7 @@ export default function CscPhd() {
         申请者可以通过两种方式申请：提交您自己的研究计划，或选择以下已提供的研究项目之一。<br /><br />
         <strong>自行制定研究计划：</strong> 我们强烈鼓励并欢迎您提交自己的研究计划（详见“CSC-Exeter offical website 如何申请”部分）。<br />
         <strong>查看现有项目列表：</strong> 详见以下项目列表。
+        有意向的同学请联系项目指导老师。
       </p>
       {proposals.length > 0 && (
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
@@ -53,6 +54,11 @@ export default function CscPhd() {
               <span className="text-emerald-800 font-medium text-base">
                 {p.title}
               </span>
+              {Array.isArray(p.supervisors) && p.supervisors.length > 0 && (
+                <span className="block text-sm text-gray-600">
+                  Supervisors: {p.supervisors.join(', ')}
+                </span>
+              )}
               <svg
                 className="h-6 w-6 text-emerald-600 group-hover:translate-x-1 transition-transform"
                 fill="currentColor"

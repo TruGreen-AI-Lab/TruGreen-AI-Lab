@@ -1,8 +1,8 @@
 import tianjinHuangImg from './assets/tj.png';
-import yunxiaoZhangImg from './assets/yunxiao.jpeg'; 
-import gaojieJinImg from './assets/gj.png'; 
-import ronghuiMuImg from './assets/IMG_2.png'; 
-import Luliu from './assets/liulu.jpg'; 
+import yunxiaoZhangImg from './assets/yunxiao.jpeg';
+import gaojieJinImg from './assets/gj.png';
+import ronghuiMuImg from './assets/IMG_2.png';
+import Luliu from './assets/liulu.jpg';
 
 export const DATA = {
   lab: {
@@ -23,10 +23,10 @@ export const DATA = {
       webpage: 'https://experts.exeter.ac.uk/42893-lu-liu',
     },
     pis: [
-      { name: 'Tianjin Huang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 't.huang2@exeter.ac.uk', img: tianjinHuangImg, webpage:'https://tianjinyellow.github.io/'},
-      { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: gaojieJinImg, webpage:'https://alexkael.github.io/'},
-      { name: 'Ronghui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: ronghuiMuImg, webpage:'https://mrh996.github.io/ronghui/' },
-      { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: yunxiaoZhangImg, webpage:'https://experts.exeter.ac.uk/41641-yunxiao-zhang' },
+      { name: 'Tianjin Huang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 't.huang2@exeter.ac.uk', img: tianjinHuangImg, webpage: 'https://tianjinyellow.github.io/' },
+      { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: gaojieJinImg, webpage: 'https://alexkael.github.io/' },
+      { name: 'Ronghui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: ronghuiMuImg, webpage: 'https://mrh996.github.io/ronghui/' },
+      { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: yunxiaoZhangImg, webpage: 'https://experts.exeter.ac.uk/41641-yunxiao-zhang' },
     ],
     // members: [
     //   {
@@ -120,15 +120,15 @@ export const DATA = {
       },
     ],
   },
-  
+
   researchAreas: [
     { title: 'Trustworthy AI', desc: 'Robustness, safety, alignment and evaluation across modalities.' },
     { title: 'Green & Efficient ML', desc: 'Energy-aware training, compression, and low-precision inference.' },
     { title: 'Sparse & Stable Optimization', desc: 'Optimizers and curricula that reduce compute and improve stability.' },
     { title: 'Applied AI', desc: 'Remote sensing, healthcare, and scientific discovery.' },
-    { title: 'Reinforcement Learning', desc: 'Reinforcement learning algorithm development and its application in bio science (e.g. protein design) and power system.' },    
+    { title: 'Reinforcement Learning', desc: 'Reinforcement learning algorithm development and its application in bio science (e.g. protein design) and power system.' },
   ],
-  
+
   news: [
     // Newest first.  When only the month and year are known we default the day to the 1st.
     {
@@ -156,7 +156,7 @@ export const DATA = {
       date: '2025-09-01',
       title: 'Gaojie will be serving as an Area Chair for ICLR 2026',
     },
-            {
+    {
       date: '2025-06-01',
       title: 'IJCAI 2025 paper accepted',
       detail: 'Safety of Embodied Navigation: A Survey',
@@ -327,99 +327,99 @@ export const DATA = {
     { year: 2025, title: 'Enhancing Robust Fairness via Confusional Spectral Regularization', authors: 'Gaojie Jin et al.', venue: 'ICLR', link: 'https://arxiv.org/pdf/2501.13273' },
     { year: 2025, title: 'REOBench: Benchmarking Robustness of Earth Observation Foundation Models', authors: 'Xiang Li et al., Tianjin Huang (Corresponding)', venue: 'NeurIPS', link: 'https://arxiv.org/abs/2505.16793' },
     { year: 2025, title: 'Composable Interventions for Language Models', authors: 'Arinbjorn Kolbeinsson*, Kyle OBrien*.Tianjin Huang* et al.', venue: 'ICLR', link: 'https://arxiv.org/abs/2407.06483' },
-    {year: 2025, title: 'Visual prompting upgrades neural network sparsification: A data-model perspective', authors: 'Can Jin*.Tianjin Huang* et al.', venue: 'AAAI', link: 'https://ojs.aaai.org/index.php/AAAI/article/view/32431' }
+    { year: 2025, title: 'Visual prompting upgrades neural network sparsification: A data-model perspective', authors: 'Can Jin*.Tianjin Huang* et al.', venue: 'AAAI', link: 'https://ojs.aaai.org/index.php/AAAI/article/view/32431' }
   ],
   resources: [
     { label: 'Open Positions', url: '#/contact' },
     { label: 'Code & Datasets', url: 'https://github.com/' },
     { label: 'Seminar Series', url: '#/news' },
   ],
-positions: [
-  {
-    title: 'CSC & University of Exeter PhD Scholarships',
-    detail:
-      'Up to 50 fully funded PhD scholarships for Chinese applicants to study at the University of Exeter as part of the China Scholarship Council collaboration',
-    url: 'https://www.exeter.ac.uk/study/pg-research/csc-scholarships/',
-  },
-  {
-    title: 'EPSRC Funded PhD Studentships',
-    detail:
-      'Up to 15 fully funded doctoral studentships available through the EPSRC Doctoral Landscape Award at Exeter for September 2025 entry',
-    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/epsrc-dla-studentships/',
-  },
-  {
-    title: 'UKRI CDT in Environmental Intelligence',
-    detail:
-      'Centre for Doctoral Training in Environmental Intelligence offering interdisciplinary training at the intersection of data science, AI and environmental challenges',
-    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundedcentres/eicdt/',
-  },
-  {
-    title: 'ESE Faculty PhD Studentships',
-    detail:
-      'Studentships in the Faculty of Environment, Science and Economy supporting research aligned with Exeter’s scientific priorities',
-    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundingbyfaculty/ese/',
-  },
-  {
-    title: 'Doctoral Training Partnerships & Centres',
-    detail:
-      'Various UK research council funded doctoral training partnerships and centres available through Exeter, spanning arts, biology, social sciences and engineering',
-    url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundedcentres/',
-  },
-  {
-    title: 'Commonwealth & International Scholarships',
-    detail:
-      'Commonwealth Scholarship Plan provides full scholarships for talented students from eligible countries to pursue PhD study in other Commonwealth nations, including Exeter',
-    url: 'https://cscuk.dfid.gov.uk',
-  },
-  {
-    title: 'EPSRC Postdoctoral Fellowship',
-    detail:
-      'Fellowships funded by the UK Engineering and Physical Sciences Research Council offering support and flexibility for early or established researchers to develop world‑leading STEM research ideas',
-    url: 'https://www.ukri.org/opportunity/epsrc-fellowships-early-and-established-career/',
-  },
-  {
-    title: 'RAEng Research Fellowship',
-    detail:
-      'Five‑year fellowships aimed at early‑career researchers within four years of their PhD to undertake ambitious engineering projects at a UK host institution; fellows must start between August and October 2026',
-    url: 'https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-fellowships/eligibility/',
-  },
-  {
-    title: 'Royal Society University Research Fellowship',
-    detail:
-      'Eight‑year fellowships for outstanding early career scientists to build an independent research career in the UK or Republic of Ireland, with up to £1.87 million in funding',
-    url: 'https://royalsociety.org/grants/university-research/',
-  },
-  {
-    title: 'Newton International Fellowship',
-    detail:
-      'Two‑year fellowships jointly run by the Royal Society and British Academy to attract non‑UK early career researchers, providing up to £280k and fostering international collaboration',
-    url: 'https://royalsociety.org/grants/newton-international/',
-  },
-  {
-    title: 'Leverhulme Early Career Fellowship',
-    detail:
-      'Three‑year fellowships enabling early career researchers without a permanent post to undertake a significant project; the Trust funds 100% of salary in year 1 and 50% in years 2–3, plus research expenses',
-    url: 'https://www.leverhulme.ac.uk/early-career-fellowships',
-  },
-  {
-    title: 'Marie Skłodowska‑Curie Postdoctoral Fellowship',
-    detail:
-      'European fellowships lasting 12–30 months open to researchers of any nationality with up to eight years of post‑PhD experience, requiring mobility to a host country and offering salary, mobility and family allowances',
-    url: 'https://marie-sklodowska-curie-actions.ec.europa.eu',
-  },
-  {
-    title: '1851 Research Fellowship',
-    detail:
-      'Highly competitive three‑year fellowships awarded by the Royal Commission for the Exhibition of 1851 to outstanding early career scientists and engineers to pursue independent research projects',
-    url: 'https://royalcommission1851.org',
-  },
-  {
-    title: 'Wellcome Early‑Career Award',
-    detail:
-      'Wellcome Trust scheme supporting early‑career researchers from any discipline to develop their own research identity in areas of human life, health and wellbeing and prepare to lead an independent programme',
-    url: 'https://wellcome.org/grant-funding/schemes/early-career-awards',
-  },
-],
+  positions: [
+    {
+      title: 'CSC & University of Exeter PhD Scholarships',
+      detail:
+        'Up to 50 fully funded PhD scholarships for Chinese applicants to study at the University of Exeter as part of the China Scholarship Council collaboration',
+      url: 'https://www.exeter.ac.uk/study/pg-research/csc-scholarships/',
+    },
+    {
+      title: 'EPSRC Funded PhD Studentships',
+      detail:
+        'Up to 15 fully funded doctoral studentships available through the EPSRC Doctoral Landscape Award at Exeter for September 2025 entry',
+      url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/epsrc-dla-studentships/',
+    },
+    {
+      title: 'UKRI CDT in Environmental Intelligence',
+      detail:
+        'Centre for Doctoral Training in Environmental Intelligence offering interdisciplinary training at the intersection of data science, AI and environmental challenges',
+      url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundedcentres/eicdt/',
+    },
+    {
+      title: 'ESE Faculty PhD Studentships',
+      detail:
+        'Studentships in the Faculty of Environment, Science and Economy supporting research aligned with Exeter’s scientific priorities',
+      url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundingbyfaculty/ese/',
+    },
+    {
+      title: 'Doctoral Training Partnerships & Centres',
+      detail:
+        'Various UK research council funded doctoral training partnerships and centres available through Exeter, spanning arts, biology, social sciences and engineering',
+      url: 'https://www.exeter.ac.uk/study/pg-research/funding/phdfunding/fundedcentres/',
+    },
+    {
+      title: 'Commonwealth & International Scholarships',
+      detail:
+        'Commonwealth Scholarship Plan provides full scholarships for talented students from eligible countries to pursue PhD study in other Commonwealth nations, including Exeter',
+      url: 'https://cscuk.dfid.gov.uk',
+    },
+    {
+      title: 'EPSRC Postdoctoral Fellowship',
+      detail:
+        'Fellowships funded by the UK Engineering and Physical Sciences Research Council offering support and flexibility for early or established researchers to develop world‑leading STEM research ideas',
+      url: 'https://www.ukri.org/opportunity/epsrc-fellowships-early-and-established-career/',
+    },
+    {
+      title: 'RAEng Research Fellowship',
+      detail:
+        'Five‑year fellowships aimed at early‑career researchers within four years of their PhD to undertake ambitious engineering projects at a UK host institution; fellows must start between August and October 2026',
+      url: 'https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-fellowships/eligibility/',
+    },
+    {
+      title: 'Royal Society University Research Fellowship',
+      detail:
+        'Eight‑year fellowships for outstanding early career scientists to build an independent research career in the UK or Republic of Ireland, with up to £1.87 million in funding',
+      url: 'https://royalsociety.org/grants/university-research/',
+    },
+    {
+      title: 'Newton International Fellowship',
+      detail:
+        'Two‑year fellowships jointly run by the Royal Society and British Academy to attract non‑UK early career researchers, providing up to £280k and fostering international collaboration',
+      url: 'https://royalsociety.org/grants/newton-international/',
+    },
+    {
+      title: 'Leverhulme Early Career Fellowship',
+      detail:
+        'Three‑year fellowships enabling early career researchers without a permanent post to undertake a significant project; the Trust funds 100% of salary in year 1 and 50% in years 2–3, plus research expenses',
+      url: 'https://www.leverhulme.ac.uk/early-career-fellowships',
+    },
+    {
+      title: 'Marie Skłodowska‑Curie Postdoctoral Fellowship',
+      detail:
+        'European fellowships lasting 12–30 months open to researchers of any nationality with up to eight years of post‑PhD experience, requiring mobility to a host country and offering salary, mobility and family allowances',
+      url: 'https://marie-sklodowska-curie-actions.ec.europa.eu',
+    },
+    {
+      title: '1851 Research Fellowship',
+      detail:
+        'Highly competitive three‑year fellowships awarded by the Royal Commission for the Exhibition of 1851 to outstanding early career scientists and engineers to pursue independent research projects',
+      url: 'https://royalcommission1851.org',
+    },
+    {
+      title: 'Wellcome Early‑Career Award',
+      detail:
+        'Wellcome Trust scheme supporting early‑career researchers from any discipline to develop their own research identity in areas of human life, health and wellbeing and prepare to lead an independent programme',
+      url: 'https://wellcome.org/grant-funding/schemes/early-career-awards',
+    },
+  ],
   /**
    * A list of sample project proposals for the CSC PhD scholarship.  Each
    * proposal contains a human‑readable title and the filename of the PDF
@@ -431,28 +431,36 @@ positions: [
     {
       title: 'LLM for Digital Forensics',
       file: 'csc-project-digital-forensics.pdf',
+      supervisors: ["Dr Yunxiao Zhang","Dr Tianjin Huang","Prof. Lu Liu"],
     },
     {
       title: 'Shadow AI: risk and goverance',
       file: 'csc-project-shadow-ai.pdf',
+      supervisors: ["Dr Yunxiao Zhang","Dr Yuxi Heluo (Exeter Business School)","Prof. Lu Liu"],
     },
     {
       title: 'Fairness analysis in Large Language Model',
+      supervisors: [],
     },
     {
       title: 'Reducing Uncertainty in Transformer Architectures for Performance Improvement',
+      supervisors: [],
     },
     {
       title: 'Robustness evaluation for the Reinforcement Learning Agents',
+      supervisors: [],
     },
     {
       title: 'Efficient Training and Fine-Tuning Strategies for Multi-Modal Foundation Models',
+      supervisors: [],
     },
     {
       title: 'Responsible Agentic AI: Oversight, Safety, and Evaluation',
+      supervisors: [],
     },
     {
       title: 'Towards Responsible Medical AI: Multi-Modal Learning, Safety, and Clinical Validation',
+      supervisors: [],
     }
   ],
 }
