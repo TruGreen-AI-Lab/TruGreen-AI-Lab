@@ -440,15 +440,15 @@ export const DATA = {
     },
     {
       title: 'Fairness analysis in Large Language Model',
-      supervisors: [],
+      supervisors: ["Dr Ronghui Mu"],
     },
     {
       title: 'Reducing Uncertainty in Transformer Architectures for Performance Improvement',
-      supervisors: [],
+      supervisors: ["Dr Guoqiang Zhang", "Dr Ronghui Mu"],
     },
     {
       title: 'Robustness evaluation for the Reinforcement Learning Agents',
-      supervisors: [],
+      supervisors: ["Dr Ronghui Mu"],
     },
     {
       title: 'Efficient Training and Fine-Tuning Strategies for Multi-Modal Foundation Models',
