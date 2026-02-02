@@ -32,17 +32,18 @@ export const DATA = {
       { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: gaojieJinImg, webpage: 'https://alexkael.github.io/' },
       { name: 'Ronghui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: ronghuiMuImg, webpage: 'https://mrh996.github.io/ronghui/' },
       { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: yunxiaoZhangImg, webpage: 'https://experts.exeter.ac.uk/41641-yunxiao-zhang' },
-    ],
-    members: [
       {
-        name: 'Dr John Panneerselvam',
-        role: 'Member',
+        name: 'John Panneerselvam',
+        role: 'Principal Investigator',
         affiliation: 'University of Exeter',
-        email: '',
-        img: 'https://placehold.co/240x240?text=John%20Panneerselvam',
-        webpage: '',
+        email: 'J.Panneerselvam@exeter.ac.uk',
+        // The current Exeter staff directory exposes a placeholder profile image.
+        // Replace this with a personal headshot URL if/when one becomes available.
+        img: 'https://www.exeter.ac.uk/v8media/codebox/profiles/profile-placeholder.jpg',
+        webpage: 'https://experts.exeter.ac.uk/43939-john-panneerselvam',
       },
     ],
+    members: [],
 
     /**
      * A list of current PhD students supervised within the lab.  Each
