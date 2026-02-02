@@ -59,6 +59,63 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
+        {/* Introduction */}
+        <div className="mt-16 max-w-3xl space-y-6">
+          <SectionTitle
+            title="Introduction"
+            subtitle="Building trustworthy, sustainable, and efficient AI."
+          />
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            {DATA.lab.introduction?.map((t, idx) => (
+              <p key={idx}>{t}</p>
+            ))}
+          </div>
+        </div>
+
+        {/* Projects */}
+        {DATA.projects && DATA.projects.length > 0 && (
+          <div className="mt-16 space-y-6">
+            <SectionTitle
+              title="Projects"
+              subtitle="Funded programmes translating our research into impact."
+            />
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {DATA.projects.map((p) => (
+                <div
+                  key={`${p.acronym || 'project'}-${p.grant || p.title}`}
+                  className="rounded-3xl bg-white/80 border border-emerald-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="space-y-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        {p.acronym && (
+                          <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-100">
+                            {p.acronym}
+                          </span>
+                        )}
+                        {p.funder && (
+                          <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 border border-emerald-100">
+                            {p.funder}
+                          </span>
+                        )}
+                        {p.grant && (
+                          <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 border border-emerald-100">
+                            {p.grant}
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="text-lg font-semibold text-gray-900 leading-snug">
+                        {p.title}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/*
           Provide only a teaser of our research on the homepage to avoid
           duplicating the detailed descriptions found on the Research page.

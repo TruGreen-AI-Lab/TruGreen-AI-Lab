@@ -5,8 +5,13 @@ export default function About() {
     <section className="mx-auto max-w-7xl px-4 py-16 space-y-8 animate-fadeIn">
       <SectionTitle
         title="About"
-        subtitle="We study methods that make AI systems reliable, efficient and sustainable, and translate them into impact with partners in science, health and the environment."
+        subtitle="Trustworthy, sustainable, and efficient AI — from foundations to real-world impact."
       />
+      <div className="max-w-3xl space-y-4 text-gray-700 leading-relaxed">
+        {DATA.lab.introduction?.map((t, idx) => (
+          <p key={idx}>{t}</p>
+        ))}
+      </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {DATA.researchAreas.map((a, i) => {
           const colours = ['bg-emerald-50', 'bg-teal-50', 'bg-lime-50', 'bg-green-50']
