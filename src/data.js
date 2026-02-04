@@ -3,6 +3,7 @@ import yunxiaoZhangImg from './assets/yunxiao.jpeg';
 import gaojieJinImg from './assets/gj.png';
 import ronghuiMuImg from './assets/IMG_2.png';
 import Luliu from './assets/liulu.jpg';
+import john from './assets/photo.jpeg'
 
 export const DATA = {
   lab: {
@@ -39,7 +40,7 @@ export const DATA = {
         email: 'J.Panneerselvam@exeter.ac.uk',
         // The current Exeter staff directory exposes a placeholder profile image.
         // Replace this with a personal headshot URL if/when one becomes available.
-        img: 'https://www.exeter.ac.uk/v8media/codebox/profiles/profile-placeholder.jpg',
+        img: john,
         webpage: 'https://experts.exeter.ac.uk/43939-john-panneerselvam',
       },
     ],
@@ -477,12 +478,6 @@ export const DATA = {
     { label: 'Seminar Series', url: '#/news' },
   ],
   positions: [
-    {
-      title: 'CSC & University of Exeter PhD Scholarships',
-      detail:
-        'Up to 50 fully funded PhD scholarships for Chinese applicants to study at the University of Exeter as part of the China Scholarship Council collaboration',
-      url: 'https://www.exeter.ac.uk/study/pg-research/csc-scholarships/',
-    },
     {
       title: 'EPSRC Funded PhD Studentships',
       detail:
