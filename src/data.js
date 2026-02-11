@@ -359,6 +359,18 @@ export const DATA = {
   ],
   projects: [
     {
+      title: 'Exploiting Overthinking Attacks on GenAI',
+      acronym: '',
+      funder: 'NVIDIA ACADEMIC GRANT PROGRAM',
+      grant: '',
+    },
+    {
+      title: 'Ensuring Trustworthy AI: Robustness Certification for Large Language Models',
+      acronym: '',
+      funder: 'Royal Society',
+      grant: '',
+    },
+    {
       title: 'Self-Learning AI-Based Digital Twins for Accelerating Clinical Care in Respiratory Emergency Admissions',
       acronym: 'SLAIDER',
       funder: 'EPSRC/UKRI',
