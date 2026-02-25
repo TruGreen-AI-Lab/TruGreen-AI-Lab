@@ -31,7 +31,7 @@ export const DATA = {
     pis: [
       { name: 'Tianjin Huang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 't.huang2@exeter.ac.uk', img: tianjinHuangImg, webpage: 'https://tianjinyellow.github.io/' },
       { name: 'Gaojie Jin', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'g.jin@exeter.ac.uk', img: gaojieJinImg, webpage: 'https://alexkael.github.io/' },
-      { name: 'Ronghui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: ronghuiMuImg, webpage: 'https://mrh996.github.io/ronghui/' },
+      { name: 'Rongrui Mu', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'R.Mu2@exeter.ac.uk', img: ronghuiMuImg, webpage: 'https://mrh996.github.io/ronghui/' },
       { name: 'Yunxiao Zhang', role: 'Principal Investigator', affiliation: 'University of Exeter', email: 'Y.Zhang12@exeter.ac.uk', img: yunxiaoZhangImg, webpage: 'https://experts.exeter.ac.uk/41641-yunxiao-zhang' },
       {
         name: 'John Panneerselvam',
@@ -166,6 +166,24 @@ export const DATA = {
     { title: 'Sparse & Stable Optimization', desc: 'Optimizers and curricula that reduce compute and improve stability.' },
     { title: 'Applied AI', desc: 'Remote sensing, healthcare, and scientific discovery.' },
     { title: 'Reinforcement Learning', desc: 'Reinforcement learning algorithm development and its application in bio science (e.g. protein design) and power system.' },
+  ],
+
+  researchThemes: [
+    {
+      pi: 'Tianjin Huang',
+      theme: 'Efficient and Reliable Learning',
+      desc: 'To enhance the generalization and robustness of deep learning models when trained on imperfect data.',
+    },
+    {
+      pi: 'Gaojie Jin',
+      theme: 'Aligning AI with Human Preference',
+      desc: 'To develop AI systems that accurately understand and act in accordance with human values, intents, and preferences.',
+    },
+    {
+      pi: 'Rongrui Mu',
+      theme: 'Robustness Verification',
+      desc: 'Develop methods for safety testing, adversarial defense, and robustness verification in AI, including images, videos, reinforcement learning, large language models, and multimodal systems.',
+    },
   ],
 
   news: [
