@@ -184,6 +184,11 @@ export const DATA = {
       theme: 'Robustness Verification',
       desc: 'Develop methods for safety testing, adversarial defense, and robustness verification in AI, including images, videos, reinforcement learning, large language models, and multimodal systems.',
     },
+    {
+      pi: 'Yunxiao Zhang',
+      theme: 'Cyber Security',
+      desc: 'To protect critical digital infrastructure and sensitive information from emerging cyber threats and vulnerabilities.',
+    },
   ],
 
   news: [
