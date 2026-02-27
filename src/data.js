@@ -189,6 +189,17 @@ export const DATA = {
       theme: 'Cyber Security',
       desc: 'To protect critical digital infrastructure and sensitive information from emerging cyber threats and vulnerabilities.',
     },
+    {
+      pi: 'Lu Liu',
+      theme: 'Trustworthy and Sustainable AI',
+      desc: 'Trustworthy and sustainable AI algorithms and self-learning digital twin models for healthcare and net zero applications.',
+    },
+    {
+      pi: 'John Panneerselvam',
+      theme: 'Datacentre Sustainability',
+      desc: 'To address excessive energy consumption of datacentres and to promote renewable energy utilisation in datacentres via large-scale trace-log analysis representing workload and energy profiles, focusing on the integration of energy-aware scheduling mechanisms with deep learning and reinforcement learning based prediction methods.',
+    },
+
   ],
 
   news: [
