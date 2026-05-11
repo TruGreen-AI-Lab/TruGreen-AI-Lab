@@ -157,6 +157,14 @@ export const DATA = {
         img: 'https://placehold.co/240x240?text=Dana%20Mentee',
         webpage: '',
       },
+      {
+        name: 'Haohan Shi',
+        role: 'Remote Visitor',
+        affiliation: 'Henan University',
+        email: '',
+        img: 'https://placehold.co/240x240?text=Dana%20Mentee',
+        webpage: '',
+      },
     ],
   },
 
