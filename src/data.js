@@ -4,6 +4,7 @@ import gaojieJinImg from './assets/gj.png';
 import ronghuiMuImg from './assets/IMG_2.png';
 import Luliu from './assets/liulu.jpg';
 import john from './assets/photo.jpeg'
+import haoHanImg from './assets/haohan.jpg';
 
 export const DATA = {
   lab: {
@@ -162,7 +163,7 @@ export const DATA = {
         role: 'Remote Visitor',
         affiliation: 'Henan University',
         email: '',
-        img: 'https://placehold.co/240x240?text=Dana%20Mentee',
+        img: haoHanImg,
         webpage: '',
       },
     ],
